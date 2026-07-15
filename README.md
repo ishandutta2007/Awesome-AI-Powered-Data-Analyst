@@ -12,13 +12,20 @@ A curated guide to leading **SaaS/cloud-hosted AI-Powered Data Analyst tools** (
 Popular platforms using LLMs and AI for natural language querying, automated insights, semantic search, and conversational BI.
 
 ### Leading Options
-- **[Snowflake Cortex Analyst](https://snowflake.com)** — Natural language to SQL with semantic modeling.
-- **[Databricks AI/BI Genie](https://databricks.com)** — Conversational analytics and agentic insights on lakehouse data.
-- **[ThoughtSpot](https://thoughtspot.com)** — Search-driven analytics with SpotIQ AI.
-- **[Microsoft Power BI Copilot](https://powerbi.microsoft.com)** — AI-assisted report generation and insights in Power BI.
-- **[Tableau Pulse](https://tableau.com)** — AI-driven insights and explanations.
-- **[camelAI](https://camelai.com)**, **[Julius AI](https://julius.ai)**, **[Hex](https://hex.tech)** — AI data assistants for analysis, visualization, and storytelling.
-- Others: Tellius, Datost, Skopx.
+
+| Product | Description | Pricing | Free Tier Limit |
+|---------|-------------|---------|-----------------|
+| **[Snowflake Cortex Analyst](https://snowflake.com)** | Natural language to SQL with semantic modeling. | Pay-as-you-go (Compute/AI Credits) | No Free Tier |
+| **[Databricks AI/BI Genie](https://databricks.com)** | Conversational analytics and agentic insights on lakehouse data. | Pay-as-you-go (Compute) | No Free Tier |
+| **[ThoughtSpot](https://thoughtspot.com)** | Search-driven analytics with SpotIQ AI. | Custom / Consumption-based | No Free Tier (Trial only) |
+| **[Microsoft Power BI Copilot](https://powerbi.microsoft.com)** | AI-assisted report generation and insights in Power BI. | Requires Premium/Fabric capacity | No Free Tier |
+| **[Tableau Pulse](https://tableau.com)** | AI-driven insights and explanations. | Included in Tableau Cloud licenses | No Free Tier |
+| **[camelAI](https://camelai.com)** | AI data assistant for analysis and coding. | Starting at ~$30/month | 10 messages/week |
+| **[Julius AI](https://julius.ai)** | AI data assistant for analysis and visualization. | Paid plans available | 15 messages/month |
+| **[Hex](https://hex.tech)** | AI data assistant for notebooks and reporting. | ~$36/user/month | 5 projects, limited compute |
+| **Tellius** | Search-driven analytics platform. | Custom Enterprise Pricing | No Free Tier |
+| **Datost** | AI-powered data analytics. | Custom Pricing | No Free Tier |
+| **Skopx** | Generative AI BI tool. | Custom Pricing | No Free Tier |
 
 These tools lower the barrier for non-technical users to explore data via chat interfaces and generate actionable insights.
 
