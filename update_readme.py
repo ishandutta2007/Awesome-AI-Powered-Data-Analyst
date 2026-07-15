@@ -1,4 +1,46 @@
-# Awesome AI-Powered Data Analyst 🤖📊
+import os
+import re
+import urllib.request
+import json
+
+def get_stars(repo):
+    try:
+        url = f"https://api.github.com/repos/{repo}"
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        with urllib.request.urlopen(req) as response:
+            data = json.loads(response.read().decode())
+            return data.get('stargazers_count', 0)
+    except:
+        return 0
+
+# Create assets folder and SVG banner
+os.makedirs('assets', exist_ok=True)
+svg_banner = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+    <style>
+      .title { font-size: 40px; font-weight: bold; fill: #ffffff; font-family: sans-serif; }
+      .subtitle { font-size: 20px; fill: #e0e0e0; font-family: sans-serif; }
+      .circle { animation: pulse 3s infinite; }
+      @keyframes pulse { 0% { r: 5; opacity: 0.5; } 50% { r: 15; opacity: 1; } 100% { r: 5; opacity: 0.5; } }
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grad)" rx="15" ry="15" />
+  <circle cx="700" cy="100" r="10" fill="#ffffff" class="circle" />
+  <circle cx="650" cy="50" r="7" fill="#ffffff" class="circle" style="animation-delay: 1s;" />
+  <circle cx="750" cy="150" r="12" fill="#ffffff" class="circle" style="animation-delay: 2s;" />
+  <text x="50" y="90" class="title">Awesome AI-Powered Data Analyst 🚀</text>
+  <text x="50" y="130" class="subtitle">A curated list of AI-Powered Data Analysis Tools &amp; Frameworks</text>
+</svg>"""
+
+with open('assets/banner.svg', 'w', encoding='utf-8') as f:
+    f.write(svg_banner)
+
+# We will just rewrite the README completely to accommodate all changes
+new_readme = """# Awesome AI-Powered Data Analyst 🤖📊
 
 <div align="center">
   <img src="assets/banner.svg" alt="Awesome AI-Powered Data Analyst Banner" />
@@ -102,3 +144,7 @@ Feel free to submit PRs to expand this list with more projects, tools, or compar
 </picture>
 </a>
 </div>
+"""
+
+with open('README.md', 'w', encoding='utf-8') as f:
+    f.write(new_readme)
